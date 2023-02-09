@@ -19,17 +19,13 @@ public class Login_StepDefinitions {
         System.out.println("User should see dashboard");
     }
 
+
     @When("user enters student username")
-    public void user_enters_student_username() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    public void userEntersStudentUsername() {
+
     }
-    @When("user enters student password")
-    public void user_enters_student_password() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @And("user enters student password")
+    public void userEntersStudentPassword() {
+
     }
-
-
-
 }
