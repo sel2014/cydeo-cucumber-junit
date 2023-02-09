@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/cydeo/step_definitions",
         dryRun = false,
-        tags = "@employee and @admin"
+        tags = "@Regression and not @student"
 )
 public class CukesRunner {
 
