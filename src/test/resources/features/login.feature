@@ -6,6 +6,8 @@ Feature: Library app login feature
 
   Accounts are: librarian, student, admin
 
+  Background: For the scenario in the feature file, user is expected to be on login page
+
   @librarian @employee @wip
   Scenario: Login as librarian
     Given user is on library login page
@@ -16,12 +18,14 @@ Feature: Library app login feature
 
   @student
   Scenario: Login as student
+    Given  user is on library login page
     When  user enters student username
     And user enters student password
     Then  user should see the dashboard
 
   @admin @employee
   Scenario: Login as admin
+    Given user is on library login page
     When  user enters admin username
     And  user enters admin password
     Then  user should see the dashboard
