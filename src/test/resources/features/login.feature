@@ -17,7 +17,7 @@ Feature: Library app login feature
     Then user should see the dashboard
 
 
-  @student
+  @student @db
   Scenario: Login as student
 
     When  user enters student username
