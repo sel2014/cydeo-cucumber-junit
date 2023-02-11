@@ -20,6 +20,15 @@ public class Hooks {
         System.out.println("======Setting up browser using cucumber @Before");
     }
 
+    @Before("@login")
+    public void setupScenarioFirLogins(){
+        System.out.println("======This will only apply to scenarios with @login tag");
+    }
+    @Before("@db")
+    public void setupForDatabaseScenarios(){
+        System.out.println("======This will only apply to scenarios with @db tag");
+    }
+
     @After
     public void tearDownScenario(){
         System.out.println("======Closing browser using cucumber @After");
