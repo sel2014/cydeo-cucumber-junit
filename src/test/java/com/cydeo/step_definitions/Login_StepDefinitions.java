@@ -36,10 +36,12 @@ public class Login_StepDefinitions {
 
     @When("user enters admin username")
     public void userEntersAdminUsername() {
+        System.out.println("user enters admin name");
     }
 
     @And("user enters admin password")
     public void userEntersAdminPassword() {
+        System.out.println("user enters admin password");
     }
 
     @Given("user is on library login page")
