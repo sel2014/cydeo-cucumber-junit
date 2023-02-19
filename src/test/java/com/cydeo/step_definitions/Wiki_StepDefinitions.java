@@ -14,7 +14,7 @@ public class Wiki_StepDefinitions {
 
     @Given("User is on Wikipedia home page")
     public void user_is_on_wikipedia_home_page() {
-        Driver.getDriver().get("https://www.wikipedia.org");
+        Driver.getDriver().get("https://en.wikipedia.org");
     }
 
     @When("User types {string} in the wiki search box")
@@ -44,5 +44,14 @@ public class Wiki_StepDefinitions {
 
     }
 
+    @Then("User sees {string} is in the image header")
+    public void userSeesIsInTheImageHeader(String string) {
+
+        System.out.println(wikiSearchPage.imageHeader.getText());
+
+        Assert.assertTrue(wikiSearchPage.imageHeader.isDisplayed());
+
+
+    }
 }
 
