@@ -26,7 +26,7 @@ public class Wiki_StepDefinitions {
     @When("User clicks wiki search button")
     public void user_clicks_wiki_search_button() {
 
-        wikiSearchPage.searchBox.click();
+        wikiSearchPage.searchButton.click();
     }
     @Then("User sees {string} is in the wiki title")
     public void user_sees_is_in_the_wiki_title(String string) {
@@ -34,4 +34,15 @@ public class Wiki_StepDefinitions {
         Assert.assertTrue(Driver.getDriver().getTitle().contains(string));
     }
 
+
+    @Then("User sees {string} is in the main header")
+    public void userSeesSteveJobsIsInTheMainHeader(String string) {
+
+        Assert.assertTrue(wikiSearchPage.mainHeader.isDisplayed());
+
+        Assert.assertTrue(wikiSearchPage.mainHeader.getText().equals(string));
+
+    }
+
 }
+
