@@ -1,21 +1,27 @@
 package com.cydeo.step_definitions;
 
+import com.cydeo.pages.WebTableLoginPage;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class Order_StepDefinitions {
 
+    WebTableLoginPage webTableLoginPage = new WebTableLoginPage();
+
     @Given("user is already logged in and on order page")
     public void user_is_already_logged_in_and_on_order_page() {
+
+        webTableLoginPage.login();  //test, tester
 
     }
     @When("user selects product type {string}")
     public void user_selects_product_type(String string) {
 
     }
-    @When("user enters quantity {int}")
-    public void user_enters_quantity(Integer int1) {
+    @And("user enters quantity {string}")
+    public void userEntersQuantity(String arg0) {
 
     }
     @When("user enters customer name {string}")
@@ -58,4 +64,6 @@ public class Order_StepDefinitions {
     public void user_should_see_in_first_row_of_the_web_table(String string) {
 
     }
+
+
 }
