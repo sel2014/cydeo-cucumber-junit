@@ -14,6 +14,12 @@ Feature: User should be able to login with correct credentials
     When  user enters  username "Test" password "Tester" and logins
     Then user should see url contains orders
 
-    #1- implement this new step
-    #2- create login method in WebTableLoginPage
-    #- this login method should have multiple different overloaded version
+
+  Scenario: User should be able to see all 12 months in
+  months
+  dropdown
+    Given  user is on the login page of the app
+    When User enters below credentials
+      | username     | Test   |
+      | password     | Tester |
+    Then user should see url contains orders
