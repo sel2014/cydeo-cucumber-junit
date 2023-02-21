@@ -67,7 +67,6 @@ public class BrowserUtils {
      * This method will accept a String value and verify actual URL CONTAINS that value.
      * @param expectedInUrl
      */
-
     public static void verifyUrlContains(String expectedInUrl){
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(expectedInUrl));
 
@@ -111,6 +110,18 @@ public class BrowserUtils {
 
     }
 
+
+    public static void clickRadioButton(List<WebElement> radioButtons, String attributeValue){
+
+        for (WebElement each : radioButtons) {
+
+            if (each.getAttribute("value").equalsIgnoreCase(attributeValue)){
+
+                each.click();
+
+            }
+        }
+    }
 
 
 }

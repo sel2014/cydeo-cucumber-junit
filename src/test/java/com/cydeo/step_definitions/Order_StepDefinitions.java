@@ -82,9 +82,18 @@ public class Order_StepDefinitions {
         orderPage.inputZip.sendKeys(string);
     }
     @When("user selects credit card type {string}")
-    public void user_selects_credit_card_type(String ExpectedCardType) {
+    public void user_selects_credit_card_type(String expectedCardType) {
 
         List<WebElement> cardTypes = orderPage.cardType;
+
+        for (WebElement eachCardType : cardTypes) {
+
+                if (eachCardType.getAttribute("value").equalsIgnoreCase(expectedCardType)){
+
+                    eachCardType.click();
+
+            }
+        }
 
     }
     @When("user enters credit card number {string}")
