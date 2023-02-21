@@ -20,7 +20,6 @@ Feature: Wikipedia search functionality and verifications
     Then User sees "Steve Jobs" is in the wiki title
 
 
-
   Scenario: Wikipedia Search Functionality Header Verification
     Given User is on Wikipedia home page
     When User types "Steve Jobs" in the wiki search box
@@ -49,7 +48,7 @@ Feature: Wikipedia search functionality and verifications
     @scientists
     Examples:
       | searchValue  | expectedTitle | expectedMainHeader |
-      | Marie Curie  |               | Marie Curie        |
+      | Marie Curie  | Marie Curie   | Marie Curie        |
       | Lady Gaga    | Lady Gaga     | Lady Gaga          |
       | Kate Winslet | Kate Winslet  | Kate Winslet       |
 
