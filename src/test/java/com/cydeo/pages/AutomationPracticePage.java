@@ -120,6 +120,9 @@ public class AutomationPracticePage {
     @FindBy(xpath = "//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[4]/a")
     public WebElement logoutButton;
 
+    @FindBy(xpath = "//*[@id=\"form\"]/div/div/div[3]/div/form/p")
+ public WebElement emailAlreadyExistMessage;
+
 
 
 
