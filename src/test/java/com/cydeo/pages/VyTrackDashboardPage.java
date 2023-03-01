@@ -16,7 +16,7 @@ public class VyTrackDashboardPage {
     @FindBy(xpath = "//li[@id = 'user-menu']/a")
     public WebElement fullName;
 
-    @FindBy(linkText = "Logout")
+    @FindBy(xpath = "//a[.='Logout']")
     public WebElement logOutLink;
 
     public void logout(){

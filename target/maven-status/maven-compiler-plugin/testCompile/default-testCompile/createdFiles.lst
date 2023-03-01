@@ -1,8 +1,11 @@
 com\cydeo\step_definitions\Login_StepDefinitions.class
+com\cydeo\tests\ExcelWrite.class
+com\cydeo\pages\VyTrackLoginPage.class
 com\cydeo\pages\DropdownsPage.class
 com\cydeo\pages\GoogleSearchPage.class
 com\cydeo\pages\BasePage.class
 com\cydeo\utilities\BrowserUtils$1.class
+com\cydeo\tests\ExcelRead.class
 com\cydeo\pages\WebTableLoginPage.class
 com\cydeo\step_definitions\GoogleStepDefinitions.class
 com\cydeo\pages\ViewAllOrderPage.class
@@ -10,6 +13,8 @@ com\cydeo\utilities\Driver.class
 com\cydeo\step_definitions\WebTables_StepDefinitions.class
 com\cydeo\step_definitions\Hooks.class
 com\cydeo\step_definitions\Wiki_StepDefinitions.class
+com\cydeo\pages\VyTrackDashboardPage.class
+com\cydeo\tests\VyTrackLoginDDTTest.class
 com\cydeo\pages\OrderPage.class
 com\cydeo\runners\FailedTestRunner.class
 com\cydeo\pages\WikiSearchPage.class
