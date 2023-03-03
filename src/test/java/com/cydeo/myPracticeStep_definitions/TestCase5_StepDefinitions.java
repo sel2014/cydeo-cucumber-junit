@@ -1,7 +1,7 @@
 package com.cydeo.myPracticeStep_definitions;
 
-import com.cydeo.pages.AutomationPracticePage;
-import com.cydeo.pages.AutomationPracticePage2;
+import com.cydeo.myPracticePages.AutomationPracticePage;
+import com.cydeo.myPracticePages.AutomationPracticePage2;
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

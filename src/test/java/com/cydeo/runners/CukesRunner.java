@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/myPracticeFeatures",
         glue = "com/cydeo/myPracticeStep_definitions",
         dryRun = false,
-        tags = "@case5",
+        tags = "",
         publish = false
 )
 public class CukesRunner {

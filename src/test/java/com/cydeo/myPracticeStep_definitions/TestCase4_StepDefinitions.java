@@ -1,7 +1,7 @@
 package com.cydeo.myPracticeStep_definitions;
 
-import com.cydeo.pages.AutomationPracticePage;
-import com.cydeo.pages.AutomationPracticePage2;
+import com.cydeo.myPracticePages.AutomationPracticePage;
+import com.cydeo.myPracticePages.AutomationPracticePage2;
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -16,6 +16,7 @@ public class TestCase4_StepDefinitions {
     @Given("I am on the home page of Automation exercise")
     public void iAmOnTheHomePageOfAutomationExercise() {
         Driver.getDriver().get("https://www.automationexercise.com");
+        Assert.assertTrue(automationPracticePage.pageTitle.isDisplayed());
     }
 
     @When("I click on Signup  Login button")
