@@ -1,4 +1,6 @@
+
 Feature: Login logout functionality
+
   Agile User Story: As a user, when I am on the home page and click on 'Signup / Login' button
   I should see Login to your account page. When I enter my email and password and click on
   login button, I should be able to login and see  Logged in as username message is displayed.
