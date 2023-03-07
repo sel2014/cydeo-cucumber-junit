@@ -2,6 +2,7 @@ package com.cydeo.myPracticeStep_definitions;
 
 import com.cydeo.myPracticePages.AutomationPracticePage;
 import com.cydeo.myPracticePages.AutomationPracticePage2;
+import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -59,7 +60,9 @@ public class TestCase4_StepDefinitions {
     public void i_click_on_logout_button() {
         automationPracticePage2.logoutButton.click();
 
+        BrowserUtils.sleep(2);
     }
+
 
     @Then("I should see the \"Login to your account page")
     public void i_should_see_the_login_to_your_account_page() {

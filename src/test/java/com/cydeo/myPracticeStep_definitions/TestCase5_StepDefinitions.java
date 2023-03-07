@@ -2,6 +2,7 @@ package com.cydeo.myPracticeStep_definitions;
 
 import com.cydeo.myPracticePages.AutomationPracticePage;
 
+import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -50,6 +51,8 @@ public class TestCase5_StepDefinitions {
     public void i_should_see_the_error_message_email_address_already_exist() {
 
         Assert.assertTrue(automationPracticePage.emailAlreadyExistMessage.isDisplayed());
+
+        BrowserUtils.sleep(2);
 
     }
 }
