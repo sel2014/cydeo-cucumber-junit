@@ -6,7 +6,7 @@ Feature: Login logout functionality
   login button, I should be able to login and see  Logged in as username message is displayed.
   As a user, when i click on logout button I should be navigated to Login to your account page.
 
-  @case4
+  @smoke
   Scenario: Login and Logout
     Given I am on the home page of Automation exercise
     When I click on Signup  Login button

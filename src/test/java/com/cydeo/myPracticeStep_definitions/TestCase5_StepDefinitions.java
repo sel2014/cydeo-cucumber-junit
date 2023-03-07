@@ -1,7 +1,7 @@
 package com.cydeo.myPracticeStep_definitions;
 
 import com.cydeo.myPracticePages.AutomationPracticePage;
-import com.cydeo.myPracticePages.AutomationPracticePage2;
+
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -11,7 +11,7 @@ import org.junit.Assert;
 public class TestCase5_StepDefinitions {
 
     AutomationPracticePage automationPracticePage = new AutomationPracticePage();
-    AutomationPracticePage2 automationPracticePage2 = new AutomationPracticePage2();
+
 
     @Given("I am on the homepage of the Automation Exercise website")
     public void i_am_on_the_homepage_of_the_automation_exercise_website() {
