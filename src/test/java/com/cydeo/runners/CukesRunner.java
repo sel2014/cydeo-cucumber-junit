@@ -14,9 +14,9 @@ import org.junit.runner.RunWith;
 
         }, //generate report
         features = "src/test/resources/myPracticeFeatures",
-        glue = "src/test/java/com/cydeo/myPracticeStep_definitions",
+        glue = "com/cydeo/myPracticeStep_definitions",
         dryRun = false,
-        tags = "@case4",
+        tags = "@smoke",
         publish = false
 )
 public class CukesRunner {
