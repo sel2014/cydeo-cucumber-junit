@@ -8,14 +8,13 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {
                 //"pretty",
-                "json:target/cucumber.json",
                 "html:target/cucumber-report.html",
                 "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
 
         }, //generate report
         features = "src/test/resources/myPracticeFeatures",
-        glue = "com/cydeo/myPracticeStep_definitions",
+        glue = "src/test/java/com/cydeo/myPracticeStep_definitions",
         dryRun = false,
         tags = "@case4",
         publish = false
