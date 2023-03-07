@@ -1,3 +1,4 @@
+
 Feature: Login logout functionality
 
   Agile User Story: As a user, when I am on the home page and click on 'Signup / Login' button
