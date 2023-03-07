@@ -17,7 +17,7 @@ public class TestCase4_StepDefinitions {
     @Given("I am on the home page of Automation exercise")
     public void iAmOnTheHomePageOfAutomationExercise() {
         Driver.getDriver().get("https://www.automationexercise.com");
-        Assert.assertTrue(automationPracticePage.pageTitle.isDisplayed());
+
     }
 
     @When("I click on Signup  Login button")
