@@ -60,7 +60,7 @@ public class TestCase4_StepDefinitions {
     public void i_click_on_logout_button() {
         automationPracticePage2.logoutButton.click();
 
-        BrowserUtils.sleep(2);
+
     }
 
 

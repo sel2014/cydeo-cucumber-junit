@@ -52,7 +52,7 @@ public class TestCase5_StepDefinitions {
 
         Assert.assertTrue(automationPracticePage.emailAlreadyExistMessage.isDisplayed());
 
-        BrowserUtils.sleep(2);
+
 
     }
 }
