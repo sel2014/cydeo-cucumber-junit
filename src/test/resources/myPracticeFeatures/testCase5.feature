@@ -7,9 +7,9 @@ Feature: Verify error message when attempting to sign up with an existing email 
   error message 'Email Address already exist!' is visible.
 
 
-  @smoke
+  @regression
   Scenario: Sign up with an existing email address
-    Given I am on the homepage of the Automation Exercise website
+    Given I am on the home page of Automation exercise
     When I click on the Signup  Login button
     Then I should see the New User Signup! message
     When I enter my name and an already registered email address
